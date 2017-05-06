@@ -14,7 +14,7 @@ class menuPrincipal {
 
 private:
     int show = 1;
-    string opcao;
+    int opcao;
     int modulo;
     string instalar = "A";
     string windows = "B";
@@ -28,6 +28,7 @@ public:
             system("cls");
             menuOpcaoPrincipal();
             cin >> opcao;
+            verificaModulos(opcao);
         }
     }
 
@@ -63,29 +64,27 @@ public:
     }
 
     void menuOpcaoPrincipal() {
-        cout <<
-             "|===============================================|\n"
-                     "| DIGITE O NÚMERO DE UMA OPCÃO PARA INICIAR\t|\n"
-                     "|===============================================|\n"
-                     "|\t\t\t\t\t\t|\n"
-                     "| 01) FINANCEIRO\t| 09) PULVERIZA\t\t|\n"
-                     "| 02) ALMOXAR\t\t| 10) SPED\t\t|\n"
-                     "| 03) SEMENTES\t\t| 11) NFE\t\t|\n"
-                     "| 04) GRAOS\t\t| 12) SIGA\t\t|\n"
-                     "| 05) COMPRAS\t\t| 13) TRANSMISSAO\t|\n"
-                     "| 06) FISCAL\t\t| 14) SGL\t\t|\n"
-                     "| 07) ALGODAO\t\t| 15) TRANSMITE\t\t|\n"
-                     "| 08) PATRIMONIO\t| 16) RECEBE\t\t|\n"
-                     "|\t\t\t\t\t\t|\n"
-                     "|===============================================|\n"
-                     "| A) INSTALAR MOSAYCO\t\t\t\t|\n"
-                     "| B) OPCOES WINDOWS\t\t\t\t|\n"
-                     "| C) OPCOES ORACLE\t\t\t\t|\n"
-                     "| F) CENTRAL DE TESTES\t\t\t\t|\n"
-                     "| X) SAIR\t\t\t\t\t|\n"
-                     "|===============================================|\n"
-                     " Opção a ser executada:  "
-             << endl;
+        cout << "|===============================================|" << endl;
+        cout << "| DIGITE O NÚMERO DE UMA OPCÃO PARA INICIAR\t|" << endl;
+        cout << "|===============================================|" << endl;
+        cout << "|\t\t\t\t\t\t|" << endl;
+        cout << "| 01) FINANCEIRO\t| 09) PULVERIZA\t\t|" << endl;
+        cout << "| 02) ALMOXAR\t\t| 10) SPED\t\t|" << endl;
+        cout << "| 03) SEMENTES\t\t| 11) NFE\t\t|" << endl;
+        cout << "| 04) GRAOS\t\t| 12) SIGA\t\t|" << endl;
+        cout << "| 05) COMPRAS\t\t| 13) TRANSMISSAO\t|" << endl;
+        cout << "| 06) FISCAL\t\t| 14) SGL\t\t|" << endl;
+        cout << "| 07) ALGODAO\t\t| 15) TRANSMITE\t\t|" << endl;
+        cout << "| 08) PATRIMONIO\t| 16) RECEBE\t\t|" << endl;
+        cout << "|\t\t\t\t\t\t|" << endl;
+        cout << "|===============================================|" << endl;
+        cout << "| A) INSTALAR MOSAYCO\t\t\t\t|" << endl;
+        cout << "| B) OPCOES WINDOWS\t\t\t\t|" << endl;
+        cout << "| C) OPCOES ORACLE\t\t\t\t|" << endl;
+        cout << "| F) CENTRAL DE TESTES\t\t\t\t|" << endl;
+        cout << "| X) SAIR\t\t\t\t\t|" << endl;
+        cout << "|===============================================|" << endl;
+        cout << " Opção a ser executada:  ";
     }
 
     void menuOpcao_A() {
@@ -159,89 +158,22 @@ public:
 
     void verificaModulos(int n) {
         switch (n) {
-            case 1:
-                cout << " escolhido 1" << endl;
+            case 0:
+                cout << "Nos vemos em breve, ate mais!" << endl;
                 system("pause");
+                exit(0);
+            case 1:
+                cout << "Verificação 01" << endl;
                 break;
             case 2:
-                cout << " escolhido 1" << endl;
-                system("pause");
+                cout << "Verificação 02" << endl;
                 break;
             case 3:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 4:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 5:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 6:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 7:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 8:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 9:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 10:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 11 :
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 12:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 13:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 14:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 15:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 16:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 17:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 18:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 19:
-                cout << " escolhido 1" << endl;
-                system("pause");
-                break;
-            case 20:
-                cout << " escolhido 1" << endl;
-                system("pause");
+                cout << "Verificação 03" << endl;
                 break;
             default:
-                cout << "Default" << endl;
-                break;
+                cout << "Digite uma opcao valida!" << endl;
+                system("pause");
         }
     }
 };
