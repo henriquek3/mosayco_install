@@ -4,6 +4,7 @@
 
 int main() {
     SetConsoleOutputCP(65001);
-    menuPrincipal().menuOpcaoPrincipal();
+    system("color A");
+    menuPrincipal().mostrarMenu();
     return 0;
 }
