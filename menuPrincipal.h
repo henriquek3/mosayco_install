@@ -24,13 +24,14 @@ private:
 
 public:
     void mostrarMenu() {
-        while (show == 1) {
+        //while (show == 1) {
             system("cls");
             menuOpcaoPrincipal();
             cin >> opcao;
             verificaModulos(retornaNumeroOpcao(opcao));
-            system("pause");
-        }
+        //opcao = "";
+        //system("cls");
+        // }
     }
 
     void menuOpcoes() {
@@ -89,24 +90,27 @@ public:
     }
 
     void menuOpcao_A() {
+        system("cls");
         cout <<
-             "|===============================================================================================|\n"
-                     "| A) INSTALAR MOSAYCO\t\t\t\t\t\t\t\t\t\t|\n"
-                     "|===============================================================================================|\n"
-                     "|\t\t\t\t\t\t\t\t\t\t\t\t|\n"
-                     "| 1) CRIAR DIRETÓRIOS - SISTEMA\t\t\t\t\t\t\t\t\t|\n"
-                     "| 2) CRIAR DIRETÓRIOS - USUARIOS\t\t\t\t\t\t\t\t|\n"
-                     "| 3) BAIXAR INSTALADORES\t\t\t\t\t\t\t\t\t|\n"
-                     "| 4) EXECUTAR INSTALADORES\t\t\t\t\t\t\t\t\t|\n"
-                     "| 5) ADICIONAR PERMISSOES\t\t\t\t\t\t\t\t\t|\n"
-                     "| 6) CONFIGURAR ODBC\t\t\t\t\t\t\t\t\t\t|\n"
-                     "|\t\t\t\t\t\t\t\t\t\t\t\t|\n"
-                     "|===============================================================================================|\n"
-                     "| V ) VOLTAR\t\t\t\t\t\t\t\t\t\t\t|\n"
-                     "| M ) MENU PRINCIPAL\t\t\t\t\t\t\t\t\t\t|\n"
-                     "|===============================================================================================|"
+             "|===============================================|\n"
+                     "| A) INSTALAR MOSAYCO\t\t\t\t|\n"
+                     "|===============================================|\n"
+                     "|\t\t\t\t\t\t|\n"
+                     "| 1) CRIAR DIRETÓRIOS - SISTEMA\t\t\t|\n"
+                     "| 2) CRIAR DIRETÓRIOS - USUARIOS\t\t|\n"
+                     "| 3) BAIXAR INSTALADORES\t\t\t|\n"
+                     "| 4) EXECUTAR INSTALADORES\t\t\t|\n"
+                     "| 5) ADICIONAR PERMISSOES\t\t\t|\n"
+                     "| 6) CONFIGURAR ODBC\t\t\t\t|\n"
+                     "|\t\t\t\t\t\t|\n"
+                     "|===============================================|\n"
+                     "| V) VOLTAR\t\t\t\t\t|\n"
+                     "| M) MENU PRINCIPAL\t\t\t\t|\n"
+                     "| X) SAIR\t\t\t\t\t|\n"
+                     "|===============================================|\n"
              <<
              endl;
+        cout << " Opção a ser executada:  ";
     }
 
     void menuOpcao_A_3() {
@@ -159,22 +163,24 @@ public:
 
     void verificaModulos(int n) {
         switch (n) {
-            case 0:
+            case 21:
                 cout << "Nos vemos em breve, ate mais!" << endl;
                 system("pause");
                 exit(0);
             case 1:
                 cout << "Verificação 01" << endl;
+                system("pause");
                 break;
             case 2:
                 cout << "Verificação 02" << endl;
                 break;
+            case 17:
+                menuOpcao_A();
             case 99:
-                cout << "Verificação 99" << endl;
+                cout << "Digite uma opcão válida!" << endl;
                 break;
             default:
-                cout << "Digite uma opcao valida!" << endl;
-                system("pause");
+                cout << "Digite uma opcão dentre as mostradas acima!" << endl;
         }
     }
 
