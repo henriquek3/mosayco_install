@@ -4,7 +4,6 @@
 #ifndef MOSAYCO_INSTALL_CCONTROLLERS_H
 #define MOSAYCO_INSTALL_CCONTROLLERS_H
 using namespace std;
-
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>

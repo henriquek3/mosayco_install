@@ -9,10 +9,9 @@ using namespace std;
 class CMenu {
 public:
     int codigo;
+    string valor;
     void showMenu();
-
     void showMenuInstalarMosayco();
-
     void showMenuInstalarMosayco_Baixar();
     //void showMenuOpcoesWindows();
     //void showMenuOpcoesOracle();
