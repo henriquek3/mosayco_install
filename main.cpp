@@ -1,10 +1,9 @@
+#include "CMenu.h"
 
-#include <afxres.h>
-#include "menuPrincipal.h"
 
-int main() {
-    SetConsoleOutputCP(65001);
-    system("color A");
-    menuPrincipal().mostrarMenu();
+int main(int argc, char *argv[]) {
+    CMenu menu;
+    menu.showMenu();
+    system("pause");
     return 0;
 }
