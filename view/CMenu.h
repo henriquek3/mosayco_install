@@ -10,7 +10,13 @@ class CMenu {
 public:
     int codigo;
     string valor;
+    bool executar = true;
     void showMenu();
+
+    string getCodMenu();
+
+    void renderViewMenu(int n);
+
     void showMenuInstalarMosayco();
     void showMenuInstalarMosayco_Baixar();
     //void showMenuOpcoesWindows();

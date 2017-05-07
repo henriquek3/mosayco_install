@@ -11,9 +11,7 @@ using namespace std;
 class CControllers {
 public:
     int retornaCodigoMenu(string arg);
-
     void renderViewMenu(int n);
-
     string getCodMenu();
 };
 

@@ -5,6 +5,7 @@
 #include "CMenu.h"
 
 void CMenu::showMenu() {
+    system("cls");
     system("color A");
     cout << "|===============================================|" << endl;
     cout << "| DIGITE O NUMERO DE UMA OPCAO PARA INICIAR\t|" << endl;
@@ -45,7 +46,6 @@ void CMenu::showMenuInstalarMosayco() {
     cout << "| M) MENU PRINCIPAL\t\t\t\t|" << endl;
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
-    cout << " Opcao a ser executada:  ";
 }
 
 void CMenu::showMenuInstalarMosayco_Baixar() {
@@ -69,4 +69,35 @@ void CMenu::showMenuInstalarMosayco_Baixar() {
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
 }
+
+void CMenu::renderViewMenu(int n) {
+    switch (n) {
+        case 21:
+            cout << "Nos vemos em breve, ate mais!" << endl;
+            exit(0);
+        case 1:
+            cout << "Verificacao 01" << endl;
+            break;
+        case 2:
+            cout << "Verificacao 02" << endl;
+            break;
+        case 17:
+            showMenuInstalarMosayco();
+            getCodMenu();
+            break;
+        case 99:
+            cout << "Digite uma opcao valida!" << endl;
+            break;
+        default:
+            cout << "Digite uma opcao dentre as mostradas acima!" << endl;
+    }
+}
+
+string CMenu::getCodMenu() {
+    string menu;
+    cout << " Opcao a ser executada:  ";
+    cin >> menu;
+    return menu;
+}
+
 
