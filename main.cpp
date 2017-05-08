@@ -1,17 +1,12 @@
-//#include "controller/CControllers.h"
 #include "view/CMenu.h"
 
 int main(int argc, char *argv[]) {
+
     CMenu menu;
-    //CControllers controllers;
-    //while (menu.executar == true) {
-    menu.showMenu(); //@exibe o menu inicial
-    menu.setValor(menu.getCodMenu());
-    menu.setCodigo(menu.retornaCodigoMenu(menu.getValor()));
-    menu.renderViewMenu(menu.getCodigo());
-    //menu.valor = controllers.getCodMenu(); //@pergunta a opcao
-    //menu.codigo = controllers.retornaCodigoMenu(menu.valor); //@converte a opcao digitada em um numero de menu
-    //menu.renderViewMenu(menu.codigo); //@renderiza o menu escolhido pelo usuario
-    //}
+    menu.showMenu(); // @todo exibe o menu inicial
+    menu.setValor(menu.getCodMenu()); // @todo pergunta a opcao e salva na variavel valor
+    menu.setCodigo(
+            menu.retornaCodigoMenu(menu.getValor())); //@todo obtem valor e repassa para retornar o codigo do menu
+    menu.renderViewMenu(menu.getCodigo()); // @todo passa o codigo para a funcao que renderiza os menus
     return 0;
 }

@@ -3,9 +3,13 @@
 //
 #ifndef MOSAYCO_INSTALL_CMENU_H
 #define MOSAYCO_INSTALL_CMENU_H
-using namespace std;
+
 #include <iostream>
 #include <cstdlib>
+#include <string>
+
+using namespace std;
+
 class CMenu {
 private:
     int codigo;

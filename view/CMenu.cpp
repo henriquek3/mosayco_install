@@ -2,6 +2,7 @@
 // Created by Jean Freitas on 07/05/2017.
 //
 
+#include <cstdio>
 #include "CMenu.h"
 
 void CMenu::showMenu() {
@@ -73,10 +74,29 @@ void CMenu::showMenuInstalarMosayco_Baixar() {
 void CMenu::renderViewMenu(int n) {
     switch (n) {
         case 1:
-            cout << "Verificacao 01" << endl;
+            bool valor;
+            valor = fopen("c:\\unisystem\\executaveis\\financeiro.exe", "r");
+            if (valor == true) {
+                system("c:\\unisystem\\executaveis\\financeiro.exe");
+            } else
+                cout << "Modulo Financeiro nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            setValor(getCodMenu());
+            setCodigo(retornaCodigoMenu(getValor()));
+            renderViewMenu(getCodigo());
             break;
         case 2:
-            cout << "Verificacao 02" << endl;
+            valor = fopen("c:\\unisystem\\executaveis\\almoxar.exe", "r");
+            if (valor == true) {
+                system("c:\\unisystem\\executaveis\\almoxar.exe");
+            } else
+                cout << "Modulo Financeiro nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            setValor(getCodMenu());
+            setCodigo(retornaCodigoMenu(getValor()));
+            renderViewMenu(getCodigo());
             break;
         case 17:
             showMenuInstalarMosayco();
