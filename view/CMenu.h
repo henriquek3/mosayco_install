@@ -7,15 +7,26 @@ using namespace std;
 #include <iostream>
 #include <cstdlib>
 class CMenu {
-public:
+private:
     int codigo;
     string valor;
+public:
     bool executar = true;
     void showMenu();
 
     string getCodMenu();
-
     void renderViewMenu(int n);
+
+    int retornaCodigoMenu(string arg);
+
+    void setCodigo(int codigo);
+
+    int getCodigo();
+
+    void setValor(string valor);
+
+    string getValor();
+
 
     void showMenuInstalarMosayco();
     void showMenuInstalarMosayco_Baixar();
