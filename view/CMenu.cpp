@@ -50,6 +50,9 @@ void CMenu::showMenuInstalarMosayco() {
     cout << "| M) MENU PRINCIPAL\t\t\t\t|" << endl;
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
+    setValor(getCodMenu());
+    setCodigo(retornaCodigoMenu(getValor()));
+    renderViewMenu(getCodigo());
 }
 
 void CMenu::showMenuInstalarMosayco_Baixar() {
@@ -72,6 +75,9 @@ void CMenu::showMenuInstalarMosayco_Baixar() {
     cout << "| M) MENU PRINCIPAL\t\t\t\t|" << endl;
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
+    setValor(getCodMenu());
+    setCodigo(retornaCodigoMenu(getValor()));
+    renderViewMenu(getCodigo());
 }
 
 void CMenu::renderViewMenu(int n) {
@@ -220,57 +226,8 @@ void CMenu::renderViewMenu(int n) {
                      << endl;
             showMenu();
             break;
-        case 2:
-            modulo = fopen(almoxar, "r");
-            if (modulo == true) {
-                system(almoxar);
-            } else
-                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
-                     << endl;
-            showMenu();
-            break;
-        case 2:
-            modulo = fopen(almoxar, "r");
-            if (modulo == true) {
-                system(almoxar);
-            } else
-                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
-                     << endl;
-            showMenu();
-            break;
-        case 2:
-            modulo = fopen(almoxar, "r");
-            if (modulo == true) {
-                system(almoxar);
-            } else
-                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
-                     << endl;
-            showMenu();
-            break;
-        case 2:
-            modulo = fopen(almoxar, "r");
-            if (modulo == true) {
-                system(almoxar);
-            } else
-                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
-                     << endl;
-            showMenu();
-            break;
-        case 2:
-            modulo = fopen(almoxar, "r");
-            if (modulo == true) {
-                system(almoxar);
-            } else
-                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
-                     << endl;
-            showMenu();
-            break;
-
         case 17:
             showMenuInstalarMosayco();
-            setValor(getCodMenu());
-            setCodigo(retornaCodigoMenu(getValor()));
-            renderViewMenu(getCodigo());
             break;
         case 21:
             showMenu();
