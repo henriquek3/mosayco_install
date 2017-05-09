@@ -27,6 +27,9 @@ void CMenu::showMenu() {
     cout << "| F) CENTRAL DE TESTES\t\t\t\t|" << endl;
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
+    setValor(getCodMenu());
+    setCodigo(retornaCodigoMenu(getValor()));
+    renderViewMenu(getCodigo());
 }
 
 void CMenu::showMenuInstalarMosayco() {
@@ -74,30 +77,195 @@ void CMenu::showMenuInstalarMosayco_Baixar() {
 void CMenu::renderViewMenu(int n) {
     switch (n) {
         case 1:
-            bool valor;
-            valor = fopen("c:\\unisystem\\executaveis\\financeiro.exe", "r");
-            if (valor == true) {
-                system("c:\\unisystem\\executaveis\\financeiro.exe");
+            modulo = fopen(financeiro, "r");
+            if (modulo == true) {
+                system(financeiro);
             } else
                 cout << "Modulo Financeiro nao encontrado, por favor faça o download do módulo no menu de instalacao"
                      << endl;
             showMenu();
-            setValor(getCodMenu());
-            setCodigo(retornaCodigoMenu(getValor()));
-            renderViewMenu(getCodigo());
             break;
         case 2:
-            valor = fopen("c:\\unisystem\\executaveis\\almoxar.exe", "r");
-            if (valor == true) {
-                system("c:\\unisystem\\executaveis\\almoxar.exe");
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
             } else
-                cout << "Modulo Financeiro nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
                      << endl;
             showMenu();
-            setValor(getCodMenu());
-            setCodigo(retornaCodigoMenu(getValor()));
-            renderViewMenu(getCodigo());
             break;
+        case 3:
+            modulo = fopen(sementes, "r");
+            if (modulo == true) {
+                system(sementes);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 4:
+            modulo = fopen(graos, "r");
+            if (modulo == true) {
+                system(graos);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 5:
+            modulo = fopen(compras, "r");
+            if (modulo == true) {
+                system(compras);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 6:
+            modulo = fopen(fiscal, "r");
+            if (modulo == true) {
+                system(fiscal);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 7:
+            modulo = fopen(algodao, "r");
+            if (modulo == true) {
+                system(algodao);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 8:
+            modulo = fopen(patrimonio, "r");
+            if (modulo == true) {
+                system(patrimonio);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 9:
+            modulo = fopen(puleriza, "r");
+            if (modulo == true) {
+                system(puleriza);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 10:
+            modulo = fopen(sped, "r");
+            if (modulo == true) {
+                system(sped);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 11:
+            modulo = fopen(nfe, "r");
+            if (modulo == true) {
+                system(nfe);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 12:
+            modulo = fopen(siga, "r");
+            if (modulo == true) {
+                system(siga);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 13:
+            modulo = fopen(transmissao, "r");
+            if (modulo == true) {
+                system(transmissao);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 14:
+            modulo = fopen(sgl, "r");
+            if (modulo == true) {
+                system(sgl);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 15:
+            modulo = fopen(transmite, "r");
+            if (modulo == true) {
+                system(transmite);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 16:
+            modulo = fopen(recebe, "r");
+            if (modulo == true) {
+                system(recebe);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 2:
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 2:
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 2:
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 2:
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+        case 2:
+            modulo = fopen(almoxar, "r");
+            if (modulo == true) {
+                system(almoxar);
+            } else
+                cout << "Modulo almoxar nao encontrado, por favor faça o download do módulo no menu de instalacao"
+                     << endl;
+            showMenu();
+            break;
+
         case 17:
             showMenuInstalarMosayco();
             setValor(getCodMenu());
