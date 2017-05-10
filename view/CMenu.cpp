@@ -27,9 +27,9 @@ void CMenu::showMenu() {
     cout << "| F) CENTRAL DE TESTES\t\t\t\t|" << endl;
     cout << "| X) SAIR\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
-    setValor(getCodMenu());
-    setCodigo(retornaCodigoMenu(getValor()));
-    renderViewMenu(getCodigo());
+    setValor(getCodMenu()); // @todo pergunta a opcao e salva na variavel valor
+    setCodigo(retornaCodigoMenu(getValor())); //@todo obtem valor e repassa para retornar o codigo do menu
+    renderViewMenu(getCodigo()); // @todo passa o codigo para a funcao que renderiza os menus*/
 }
 
 void CMenu::showMenuInstalarMosayco() {
@@ -69,6 +69,30 @@ void CMenu::showMenuInstalarMosayco_Baixar() {
     cout << "| 7) CUTEPDF\t\t\t\t\t|" << endl;
     cout << "| 8) PLSQL\t\t\t\t\t|" << endl;
     cout << "| 9) APP ORA28000\t\t\t\t|" << endl;
+    cout << "|\t\t\t\t\t\t|" << endl;
+    cout << "|===============================================|" << endl;
+    cout << "| V) VOLTAR\t\t\t\t\t|" << endl;
+    cout << "| M) MENU PRINCIPAL\t\t\t\t|" << endl;
+    cout << "| X) SAIR\t\t\t\t\t|" << endl;
+    cout << "|===============================================|" << endl;
+    setValor(getCodMenu());
+    setCodigo(retornaCodigoMenu(getValor()));
+    renderViewMenu(getCodigo());
+}
+
+void CMenu::showMenuOpcoesOracle() {
+    cout << "|===============================================|" << endl;
+    cout << "| B) OPCOES ORACLE\t\t\t\t|" << endl;
+    cout << "|===============================================|" << endl;
+    cout << "|\t\t\t\t\t\t|" << endl;
+    cout << "| 48) CRIAR USUARIO\t\t\t\t|" << endl;
+    cout << "| 49) IMPORTAR BANCO DE DADOS\t\t\t|" << endl;
+    cout << "| 50) EXPORTAR BANCO DE DADOS\t\t\t|" << endl;
+    cout << "| 51) VERIFICAR O STATUS LISTENER\t\t|" << endl;
+    cout << "| 52) INICIAR O SERVICO LISTENER\t\t|" << endl;
+    cout << "| 53) PARAR   O SERVICO LISTENER\t\t|" << endl;
+    cout << "| 54) BLOQUEAR BANCO DE DADOS\t\t\t|" << endl;
+    cout << "| 55) DESBLOQUEAR BANCO DE DADOS\t\t|" << endl;
     cout << "|\t\t\t\t\t\t|" << endl;
     cout << "|===============================================|" << endl;
     cout << "| V) VOLTAR\t\t\t\t\t|" << endl;
